@@ -143,9 +143,9 @@ class VertxRedisAPIRedisForkedTest extends VertxRedisAPITestBase {
 
   @Override
   def setup() {
-    CheckpointValidator.excludeValidations_DONOTUSE_I_REPEAT_DO_NOT_USE(
-      CheckpointValidationMode.INTERVALS,
-      CheckpointValidationMode.THREAD_SEQUENCE)
+    //    CheckpointValidator.excludeValidations_DONOTUSE_I_REPEAT_DO_NOT_USE(
+    //      CheckpointValidationMode.INTERVALS,
+    //      CheckpointValidationMode.THREAD_SEQUENCE)
   }
 }
 
@@ -167,8 +167,8 @@ class VertxRedisAPIRedisConnectionForkedTest extends VertxRedisAPITestBase {
 
   @Override
   def setup() {
-    CheckpointValidator.excludeValidations_DONOTUSE_I_REPEAT_DO_NOT_USE(
-      CheckpointValidationMode.INTERVALS,
-      CheckpointValidationMode.THREAD_SEQUENCE)
+    //    CheckpointValidator.excludeValidations_DONOTUSE_I_REPEAT_DO_NOT_USE(
+    //      CheckpointValidationMode.INTERVALS,
+    //      CheckpointValidationMode.THREAD_SEQUENCE)
   }
 }
