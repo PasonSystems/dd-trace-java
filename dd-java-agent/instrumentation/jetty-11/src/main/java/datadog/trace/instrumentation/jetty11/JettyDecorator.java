@@ -59,7 +59,7 @@ public class JettyDecorator extends HttpServerDecorator<Request, Request, Respon
     if (Config.get().isServletPrincipalEnabled() && request.getUserPrincipal() != null) {
       span.setTag(DDTags.USER_NAME, request.getUserPrincipal().getName());
     }
-    Object ex = request.getAttribute("javax.servlet.error.exception");
+    Object ex = request.getAttribute("jakarta.servlet.error.exception");
     if (ex instanceof Throwable) {
       Throwable throwable = (Throwable) ex;
       if (throwable instanceof ServletException) {
